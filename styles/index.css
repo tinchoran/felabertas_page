@@ -83,10 +83,19 @@ ul, ol{
     margin: 0 auto;
 }
 
+body{
+    background-color: var(--light-bg-solid);
+}
+
 /*------------ HEADER -------------*/
 .header{
     width: 100%;
     padding: var(--spacing-16) var(--spacing-12);
+    background-color: var(--light-bg-solid);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
 
@@ -132,7 +141,7 @@ ul, ol{
 
 /*----------- HERO ------------*/
 .hero{
-    background-image: url("../img/branding/hero.png");
+    background-image: url("../img/branding/hero.webp");
     padding: 256px var(--spacing-36);
     background-size: cover;
     background-attachment: fixed;
