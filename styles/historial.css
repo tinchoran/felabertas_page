@@ -1,0 +1,111 @@
+:root{
+    /*Font-sizes*/
+    --font-display: 4.2rem;
+    --font-jumbo: 3.6rem;
+    --font-xlarge: 3.2rem;
+    --font-large: 2.8rem;
+    --font-medium: 2.2rem;
+    --font-small: 1.8rem;
+    --font-xsmall: 1.6rem;
+    --font-thin: 1.2rem;
+
+    /*Font-styles*/
+    --base-font: 'Inter', sans-serif;
+    --alternative-font: 'Raleway', sans-serif;
+
+    /*Backgrounds*/
+    --dark-bg: #222020;
+    --dark-bg-solid: #30343F;
+    --light-bg-solid: #FAFAFF;
+
+    /*Font-colors*/
+    --light-font: #ddf4ed;
+    --green-font: #0abd81;
+
+    /* Palette */
+    --primary-solid: #d61313;
+    --primary-900: rgba(255, 51, 51, 0.9);
+    --primary-500: rgba(255, 51, 51, 0.5);
+    --primary-300: rgba(255, 51, 51, 0.3);
+
+    --secondary-solid: #1D84B5;
+    --secondary-900: rgba(29, 132, 181, 0.9);
+    --secondary-500: rgba(29, 132, 181, 0.5);
+    --secondary-300: rgba(29, 132, 181, 0.3);
+    
+    --dark-solid: #1F1F1F;
+    --dark-900: rgb(31, 31, 31, 0.9);
+    --dark-500: rgb(31, 31, 31, 0.5);
+    --dark-300: rgb(31, 31, 31, 0.3);
+
+    /*Spacings*/
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
+}
+
+
+/*Main*/
+.historial{
+    width: 100%;
+    padding: var(--spacing-128);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-68);
+    align-items: center;
+    color: var(--primary-solid);
+}
+
+.historial__title{
+    text-align: center;
+    font-size: var(--font-display);
+    font-weight: 700;
+}
+
+.historial__datos{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr 2fr 1fr;
+    gap: var(--spacing-36);
+}
+
+.historial__datos-item{
+    font-size: var(--font-large);
+}
+
+
+/*----- TABLA ---- */
+.tabla{
+    color: var(--primary-solid);
+}
+
+.table__resultados{
+    border-collapse: collapse;
+    color: black;
+    margin: 0 auto;
+    font-size: var(--font-small);
+}
+
+.table__resultados th, td{
+    text-align: center;
+    vertical-align: middle;
+    padding: var(--spacing-12);
+    border: 1px solid black;
+}
+
+.table__fecha{
+    width: 5rem;
+}
+
+.table__firstTeam, .table__secondTeam{
+    min-width: 20rem;
+}
+
+.table__lugar{
+    min-width: 10rem;
+}
