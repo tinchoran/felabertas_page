@@ -38,7 +38,26 @@
 
     <main class="historial-container container " id="historial-container">
 
-        <section class="historial">
+        <!--INTERACCIONES-->
+        <section class="interacciones">
+            <ul class="navbar__items">
+                <li class="navbar__item">
+                    <a href="#historial" class="navbar__link">Historial</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#resultados" class="navbar__link">Resultados</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#estadisticas" class="navbar__link">Estadísticas</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#palmares" class="navbar__link">Palmarés</a>
+                </li>
+            </ul>
+        </section>
+
+        <!--HISTORIAL-->
+        <section class="historial" id="historial">
             <h1 class="historial__title">HISTORIAL</h1>
             <article class="historial__datos">
                 <h3 class="historial__datos-item">Victorias</h3>
@@ -50,7 +69,9 @@
             </article>
         </section>
 
-        <section class="tabla">
+        <!--RESULTADOS-->
+        <section class="tabla" id="resultados">
+            <!-- TABLA DE RESULTADOS -->
             <h2 class="historial__title">TABLA DE RESULTADOS</h2>
             <table class="table__resultados">
                 <thead>
@@ -72,6 +93,118 @@
                 </tbody>
             </table>
         </section>
+
+        <!--ESTADISTICAS-->
+        <section class="estadisticas" id="estadisticas">
+            <h2 class="historial__title">ESTADÍSTICAS</h2>
+            <div class="tables__container">
+                <table class="table__goleadores">
+                    <caption class="table__caption">Goleadores</caption>
+                    <thead>
+                        <tr>
+                            <th>Jugador</th>
+                            <th>Goles</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Martín Ranzuglia</td>
+                            <td>??</td>
+                        </tr>
+                        <tr>
+                            <td>Tomás Caffaratti</td>
+                            <td>??</td>
+                        </tr>
+                        <tr>
+                            <td>Jerónimo Anillo</td>
+                            <td>??</td>
+                        </tr>
+                        <tr>
+                            <td>Agustín Bertone</td>
+                            <td>??</td>
+                        </tr>
+                        <tr>
+                            <td>Bautista Casullo</td>
+                            <td>??</td>
+                        </tr>
+                        <tr>
+                            <td>Emanuel Bustos</td>
+                            <td>??</td>
+                        </tr>
+                        <tr>
+                            <td>Giuliano Barbaglia</td>
+                            <td>??</td>
+                        </tr>
+                        <tr>
+                            <td>Felipe Barrilli</td>
+                            <td>??</td>
+                        </tr>
+                            
+                    </tbody>
+                </table>
+
+                <table class="table__apariciones">
+                    <caption class="table__caption">Más apariciones</caption>
+                    <thead>
+                        <tr>
+                            <th>Jugador</th>
+                            <th>Apariciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Martín Ranzuglia</td>
+                            <td>??</td>
+                        </tr>
+                        <tr>
+                            <td>Tomás Caffaratti</td>
+                            <td>??</td>
+                        </tr>
+                        <tr>
+                            <td>Jerónimo Anillo</td>
+                            <td>??</td>
+                        </tr>
+                        <tr>
+                            <td>Agustín Bertone</td>
+                            <td>??</td>
+                        </tr>
+                        <tr>
+                            <td>Bautista Casullo</td>
+                            <td>??</td>
+                        </tr>
+                        <tr>
+                            <td>Emanuel Bustos</td>
+                            <td>??</td>
+                        </tr>
+                        <tr>
+                            <td>Giuliano Barbaglia</td>
+                            <td>??</td>
+                        </tr>
+                        <tr>
+                            <td>Felipe Barrilli</td>
+                            <td>??</td>
+                        </tr>
+                            
+                    </tbody>
+                </table>
+        
+            </div>
+
+        </section>
+
+        <!---->
+        <h2 class="historial__title">PALMARÉS</h2>
+        <section class="palmares" id="palmares">
+            <article class="palmares__item">
+                <picture class="palmares__cover">
+                    <img src="../img/trofeos/trofeo.webp" alt="Trofeo de torneo del Superior de Comercio" class="palmares__cover-img">
+                    <p class="palmares__cantidad">x1</p>
+                </picture>
+                <p class="palmares__item__info">Torneo Superior de Comercio</p>
+            </article>
+            <hr>
+        </section>
+
     </main>
 
 
