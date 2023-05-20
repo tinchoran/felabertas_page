@@ -1,0 +1,138 @@
+:root{
+    /*Font-sizes*/
+    --font-display: 4.2rem;
+    --font-jumbo: 3.6rem;
+    --font-xlarge: 3.2rem;
+    --font-large: 2.8rem;
+    --font-medium: 2.2rem;
+    --font-small: 1.8rem;
+    --font-xsmall: 1.6rem;
+    --font-thin: 1.2rem;
+
+    /*Font-styles*/
+    --base-font: 'Inter', sans-serif;
+    --alternative-font: 'Raleway', sans-serif;
+
+    /*Backgrounds*/
+    --dark-bg: #222020;
+    --dark-bg-solid: #30343F;
+    --light-bg-solid: #FAFAFF;
+
+    /*Font-colors*/
+    --light-font: #ddf4ed;
+    --green-font: #0abd81;
+
+    /* Palette */
+    --primary-solid: #d61313;
+    --primary-900: rgba(255, 51, 51, 0.9);
+    --primary-500: rgba(255, 51, 51, 0.5);
+    --primary-300: rgba(255, 51, 51, 0.3);
+
+    --secondary-solid: #1D84B5;
+    --secondary-900: rgba(29, 132, 181, 0.9);
+    --secondary-500: rgba(29, 132, 181, 0.5);
+    --secondary-300: rgba(29, 132, 181, 0.3);
+    
+    --dark-solid: #1F1F1F;
+    --dark-900: rgb(31, 31, 31, 0.9);
+    --dark-500: rgb(31, 31, 31, 0.5);
+    --dark-300: rgb(31, 31, 31, 0.3);
+
+    /*Spacings*/
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
+}
+
+
+/*CARRUSEL*/
+.carousel{
+    margin: 0 auto var(--spacing-68) auto;
+    width: 90%;
+    height: 52.5rem;
+}
+
+.carousel__cover{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background: linear-gradient(rgb(157, 115, 115)30%, rgb(103, 61, 61)70%);
+    box-shadow: 1px 3px 10px grey;
+}
+
+.carousel__cover-img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: inset(0 0 0 100%);
+    transition: .5s ease;
+}
+
+.carousel__cover-img:first-child{
+    clip-path: inset(0 0 0 0);
+}
+
+.carousel__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    align-self: center;
+    border: none;
+    margin: 0 3rem;
+    padding: var(--spacing-8);
+    transition: .4s;
+    z-index: 10;
+    height: 6rem;
+    width: 6rem;
+    filter: invert(1);
+    filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
+}
+
+
+
+#carousel__btnLeft{
+    left: 0;
+    background: url("../img/branding/chevron_left.svg");
+    background-size: contain;
+}
+
+#carousel__btnRight{
+    right: 0;
+    background: url("../img/branding/chevron_right.svg");
+    background-size: contain;
+}
+
+/*carousel__ubi (ubicación del slider)*/
+
+.carousel__ubi{
+    position: absolute;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+    margin-bottom: 2rem;
+}
+
+.carousel__ubi-item{
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    width: 3.5rem;
+}
+
+
+
