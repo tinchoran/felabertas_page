@@ -2,6 +2,8 @@ const cover = document.querySelector(".carousel__cover");
 const images = document.querySelectorAll(".carousel__cover-img");
 const botones = document.querySelectorAll(".carousel__btn")
 const markers = document.querySelectorAll(".carousel__ubi-item")
+const figCaption = document.querySelector(".carousel__figcaption")
+const anios = [2020, 2019, 2021, 2021, 2021]
 
 
 //Contador
@@ -11,6 +13,7 @@ let counter = 0;
 const siguiente  = async (cont)=>{
     images[cont - 1].style.clipPath = "inset(0 100% 0 0)";
     images[cont].style.clipPath = "inset(0 0 0 0)"
+    figCaption.innerHTML = `${anios[cont]}`
 }
 
 
@@ -18,12 +21,15 @@ const siguiente  = async (cont)=>{
 const anterior = (cont)=>{
     images[cont + 1].style.clipPath = "inset(0 0 0 100%)";
     images[cont].style.clipPath = "inset(0 0 0 0)";
+    figCaption.innerHTML = `${anios[cont]}`
 }
 
 //Marcar el rectangulo que indica la foto actual
 const mark  = (cont)=>{
     markers.forEach(m => m.style.backgroundColor = "grey")
     markers[cont].style.backgroundColor = "white";
+    //Poner el primer año
+    figCaption.innerHTML = `${anios[cont]}`
 }
 
 //Slider

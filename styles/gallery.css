@@ -56,6 +56,7 @@
     margin: 0 auto var(--spacing-68) auto;
     width: 90%;
     height: 52.5rem;
+    animation: aparicion .5s ease;
 }
 
 .carousel__cover{
@@ -68,7 +69,7 @@
     overflow: hidden;
     border-radius: 10px;
     background: linear-gradient(rgb(157, 115, 115)30%, rgb(103, 61, 61)70%);
-    box-shadow: 1px 3px 10px grey;
+    box-shadow: 2px 20px 21px -3px rgba(0,0,0,0.56);
 }
 
 .carousel__cover-img{
@@ -77,8 +78,22 @@
     top: 0;
     left: 0;
     clip-path: inset(0 0 0 100%);
-    transition: .5s ease;
+    transition: .6s ease;
 }
+
+.carousel__cover::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background: transparent;
+    height: 100%;
+    z-index: 9;
+    box-shadow: 0px 152px 141px -100px rgba(0,0,0,1) inset;
+}
+
+
 
 .carousel__cover-img:first-child{
     clip-path: inset(0 0 0 0);
@@ -134,5 +149,20 @@
     width: 3.5rem;
 }
 
+.carousel__figcaption{
+    z-index: 10;
+    position: absolute;
+    top: 1rem;
+    color: var(--light-font);
+    font-size: var(--font-large);
+    animation: aparicion .7s;
+    font-weight: 700;
+}
+
+/*-- ANIMACIONES --*/
+@keyframes aparicion {
+    from{opacity: 0; transform: translateY(30px);}
+    to{opacity: 1; transform: none;}
+}
 
 
