@@ -227,7 +227,7 @@ body{
 
 .card{
     overflow: hidden;
-    min-width: 350px;
+    flex: 0 0 350px;
     position: relative;
 }
 
@@ -291,4 +291,9 @@ body{
 .footer__copy{
     color: var(--light-font);
     font-size: var(--font-thin);
+}
+
+
+@media screen and (max-width:768px) {
+    
 }

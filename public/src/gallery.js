@@ -25,11 +25,13 @@ const anterior = (cont)=>{
 }
 
 //Marcar el rectangulo que indica la foto actual
+let auxcontMax = 0
 const mark  = (cont)=>{
     markers.forEach(m => m.style.backgroundColor = "grey")
     markers[cont].style.backgroundColor = "white";
     //Poner el primer año
     figCaption.innerHTML = `${anios[cont]}`
+    return auxcontMax = cont;
 }
 
 //Slider

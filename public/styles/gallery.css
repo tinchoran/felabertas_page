@@ -141,13 +141,17 @@
     align-items: center;
     gap: var(--spacing-8);
     margin-bottom: 2rem;
+    
 }
 
 .carousel__ubi-item{
     height: 3px;
     background-color: rgb(255, 255, 255);
     width: 3.5rem;
+    
 }
+
+
 
 .carousel__figcaption{
     z-index: 10;
