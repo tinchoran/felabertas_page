@@ -1,0 +1,51 @@
+[
+  {
+    "nombre": "Martin",
+    "apellido": "Castillo Ranzuglia",
+    "edad": 19,
+    "goles": 20,
+    "partidos": 29
+  },
+  {
+    "nombre": "Jeronimo",
+    "apellido": "Anillo",
+    "edad": 19,
+    "goles": 15,
+    "partidos": 21
+  },
+  {
+    "nombre": "Tomas",
+    "apellido": "Caffaratti",
+    "edad": 19,
+    "goles": 38,
+    "partidos": 19
+  },
+  {
+    "nombre": "Agustin",
+    "apellido": "Bertone",
+    "edad": 20,
+    "goles": 29,
+    "partidos": 14
+  },
+  {
+    "nombre": "Bautista",
+    "apellido": "Cassullo",
+    "edad": 19,
+    "goles": 19,
+    "partidos": 14
+  },
+  {
+    "nombre": "Emanuel",
+    "apellido": "Bustos",
+    "edad": 19,
+    "goles": 9,
+    "partidos": 14
+  },
+  {
+    "nombre": "Felipe",
+    "apellido": "Barrilli",
+    "edad": 20,
+    "goles": 6,
+    "partidos": 3
+  }
+]

@@ -47,3 +47,5 @@ while op != "0":
         op = input(" - ")
         
 fun.reasignar_ID()
+
+init.file.close()
